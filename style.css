@@ -1,18 +1,21 @@
 body{
-    background: linear-gradient(to right, rgb(58, 58, 133), rgb(255, 255, 255));
+    background: linear-gradient(to right, rgb(71, 71, 79), rgb(113, 97, 97));
+    margin: 20px;
 }
 .container{
     margin: 0 auto;
     width: 99%;
     height: 675px;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     overflow: hidden;
+    overflow-x: hidden;
 }
 .title{
     display: flex;
     justify-content: center;
     font-weight: bold;
     color: rgb(255, 202, 8);
+    font-family: cursive;
 }
 nav{
     height: 50px;
@@ -36,6 +39,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     padding: 18px;
+    font-family: cursive;
 }
 .modal{
     width: 400px;
@@ -56,6 +60,7 @@ nav ul li a{
     top: 50%;
     transform: translate(-50%,-50%) scale(1);
     transition: transform 0.4s, top 0.4s, visibility 0s;
+    z-index: 1;
 }
 .close-modal {
     top: 0;
@@ -69,7 +74,7 @@ nav ul li a{
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
-.modal h2{
+.modal .modalTitle{
     font-size: 38px;
     font-weight: 500;
     margin: 30px 0 10px;
@@ -86,4 +91,69 @@ nav ul li a{
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.subTitle, .titleMisProyectos{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family:  cursive;
+}
+.parrafoPrincipal{
+    width: 30%;
+    height: 50%;
+    margin: 0 auto;
+    color: yellow;
+    font-size: 24px;
+    position: absolute;
+    right: 32%;
+    font-family:  cursive;
+}
+.iconGitHub{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+}
+.titleMisProyectos{
+    position: absolute;
+    top: 62%;
+    right: 39%;
+    font-size: 30px;
+}
+.imagen-tic-tac-toe{
+    width: 250px;
+    height: 230px;
+    padding: 10px; 
+    border-radius: 8px;
+    background: rgb(0, 0, 0);
+}
+.GaleriaProyectos{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    position: absolute;
+    top: 80%;
+    right: 72%;
+    gap: 20px;
+    
+}
+.GaleriaProyectos a:hover{
+    position: relative;
+    top: -20px;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: #00bbef;
+}
+.title{
+    position: relative;
+    right: 10px;
+    color: rgb(11, 174, 255);
 }
