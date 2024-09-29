@@ -9,5 +9,5 @@ function closeModal(){
     setTimeout(() => {
         modalElement.classList.remove('open-modal');
         
-    }, 400);
+    }, 100);
 }
