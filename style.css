@@ -165,6 +165,11 @@ a{
         position: relative;
         left: -75%;
     }
+    .subTitle, .parrafoPrincipal{
+        text-align: center;
+        position: relative;
+        left: -10px;
+    }
     nav{
         height: 100px;
         width: 50%;
