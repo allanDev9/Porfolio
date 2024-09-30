@@ -157,77 +157,47 @@ a{
     right: 10px;
     color: rgb(11, 174, 255);
 }
-/* Media queries para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    /* Ajustes generales para móviles */
-    .title {
-        font-size: 2em;
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .GaleriaProyectos {
+        flex-direction: column;
         align-items: center;
     }
 
     .GaleriaProyectos a {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .GaleriaProyectos img {
-        width: 100%;
-    }
-
-    /* Ajustes en la fuente */
-    .titleMisProyectos {
-        font-size: 1.5em;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .parrafoPrincipal {
-        font-size: 1.2em;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .iconGitHub {
-        width: 40px;
-        height: 40px;
+        width: 90%;  /* Adaptar las tarjetas al tamaño de pantalla en móvil */
     }
 
     .modal {
-        width: 90%;
-        padding: 15px;
-    }
-
-    /* Espaciado en los botones y los artículos */
-    nav ul li a {
-        font-size: 1.1em;
+        width: 80%;
+        padding: 20px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    /* Ajustes más específicos para pantallas muy pequeñas */
-    .title {
-        font-size: 1.8em;
+@media (max-width: 480px) {
+    h1.title, h2.subTitle, h2.titleMisProyectos {
+        font-size: 1.5em; /* Reducir el tamaño de los títulos en pantallas muy pequeñas */
     }
 
     .GaleriaProyectos a {
-        width: 100%;
-    }
-
-    .iconGitHub {
-        width: 35px;
-        height: 35px;
-    }
-
-    nav ul li a {
-        font-size: 1em;
+        width: 100%;  /* Ocupa todo el ancho en pantallas pequeñas */
     }
 
     .modal {
-        padding: 10px;
+        width: 90%;  /* Asegura que el modal se vea bien en pantallas pequeñas */
     }
 }
