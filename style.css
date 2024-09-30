@@ -157,3 +157,77 @@ a{
     right: 10px;
     color: rgb(11, 174, 255);
 }
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Ajustes generales para móviles */
+    .title {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .GaleriaProyectos a {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .GaleriaProyectos img {
+        width: 100%;
+    }
+
+    /* Ajustes en la fuente */
+    .titleMisProyectos {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .parrafoPrincipal {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .iconGitHub {
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Espaciado en los botones y los artículos */
+    nav ul li a {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes más específicos para pantallas muy pequeñas */
+    .title {
+        font-size: 1.8em;
+    }
+
+    .GaleriaProyectos a {
+        width: 100%;
+    }
+
+    .iconGitHub {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .modal {
+        padding: 10px;
+    }
+}
