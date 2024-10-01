@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">
-            Porfolio
+        <h1 class="titlePrincipal">
+            <sapan class="animacion-titulo">
+                Porfolio
+            </sapan>
         </h1>
         <nav>
             <ul>
-                <li><a href="#Mis Proyectos">Mis Proyectos</a></li>
+                <li><a href="#Proyectos">Mis Proyectos</a></li>
                 <li><a href="#">Contactos</a></li>
                 <li><a href="#">Ubicacion</a></li>
                 <li><a href="#" onclick="openModal()">Informacion</a></li>
@@ -26,8 +28,11 @@
             <button type="button" onclick="closeModal()">De acuerdo</button>
         </div>
         <section id="Mis Proyectos">
+            <img class="imagen-de-allan" src="./img/AllanChiquito.jpg">
             <h2 class="subTitle">
-                Allan Peña 
+                <em>
+                   Allan Peña 
+                </em> 
             </h2>
             <p class="parrafoPrincipal">Hola mi nombre es Allan y soy desarrollador web</p>
             <a href="https://github.com/allanDev9" target="_blank">
@@ -35,18 +40,19 @@
             </a> 
         </div>
     </section>
-    <h2 class="titleMisProyectos">Estos son mis proyectos</h2>
-    <article class="GaleriaProyectos">
-        <a class="card-1" href="https://github.com/allanDev9/tic-tac-toe" target="_blank">
-            <h1 class="title">Tic Tac Toe</h1>
-            <img class="imagen-tic-tac-toe" src="./img/tik-tac-toe.png" alt="">
-        </a>
-        <a class="card-2" href="https://github.com/allanDev9/login" target="_blank">
-            <h1 class="title">Login</h1>
-            <img class="imagen-tic-tac-toe" src="./img/login.png" alt="">
-        </a>
-        <a class="card-3" href="https://github.com/allanDev9/scripting-python" target="_blank">
-            <h1 class="title">Password Atack</h1>
+    <h2  id='Proyectos'class="titleMisProyectos">Estos son mis proyectos</h2>
+    <div class="proyectos-container">
+        <article class="GaleriaProyectos">
+            <a class="card-1" href="https://github.com/allanDev9/tic-tac-toe" target="_blank">
+                <h1 class="title">Tic Tac Toe</h1>
+                <img class="imagen-tic-tac-toe" src="./img/tik-tac-toe.png" alt="">
+            </a>
+            <a class="card-2" href="https://github.com/allanDev9/login" target="_blank">
+                <h1 class="title">Login</h1>
+                <img class="imagen-tic-tac-toe" src="./img/login.png" alt="">
+            </a>
+            <a class="card-3" href="https://github.com/allanDev9/scripting-python" target="_blank">
+                <h1 class="title">Password Atack</h1>
             <img class="imagen-tic-tac-toe" src="./img/password-atack.png" alt="">
         </a>
         <a class="card-4" href="https://github.com/allanDev9/curso-react-native-metacritic-app" target="_blank">
@@ -54,6 +60,7 @@
             <img class="imagen-tic-tac-toe" src="./img/android-studio.png" alt="">
         </a>
     </article>
+</div>
         <script src="index.js"></script>
     </body>
     </html>

@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
+
 body{
-    background: linear-gradient(to right, rgb(71, 71, 79), rgb(113, 97, 97));
+    background: linear-gradient(to right, rgb(11, 11, 87), rgba(7, 71, 117, 0.334));
     margin: 20px;
 }
 .container{
@@ -10,30 +12,52 @@ body{
     overflow: hidden;
     overflow-x: hidden;
 }
-.title{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    color: rgb(255, 202, 8);
-    font-family: cursive;
+@keyframes titlePrincipal{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    30%{
+        width: 20vw;
+        height: 0;
+    }
+    60%{
+        width: 30vw;
+        height: 6vw;
+    }
+    80%{
+        width: 30vw;
+        height: 6vw;
+    }
+    100%{
+        width: 25vw;
+        height: 6vw;
+    }
 }
-nav{
+nav {
     height: 50px;
     width: 50%;
-    margin: 0 auto;
-    background-color:#17181C;
+    background-color: rgba(0, 157, 255, 0.1);
     text-align: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.484);
+    position: fixed; /* Cambiado a fixed para que sea fijo */
+    right: 27%;
+    top: 0; /* Asegura que el menú esté pegado en la parte superior */
+    z-index: 1000; /* Asegura que el menú quede por encima de otros elementos */
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: inline-block;
     padding: 18px;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     margin-top: -22px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -92,36 +116,134 @@ nav ul li a{
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
-.subTitle, .titleMisProyectos{
+.titlePrincipal {
+    position: relative;
+    top: 6%;
+    right: -31%;
+    text-align: center;
+    color: rgba(17, 12, 159, 0.88);
+    font-family: cursive;
+    font-size: 60px;
+    border-bottom: 0.2vw solid white; 
+    height: 100px;
+    overflow: hidden;
+    margin: 20px;
+    margin-bottom: 20px; 
+    animation: titlePrincipal 2.5s linear forwards infinite alternate-reverse;
+}
+.titleMisProyectos{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 250px;
     font-size: 50px;
     font-family:  cursive;
 }
+.subTitle{
+    display: absolute;
+    text-align: center;
+    position: absolute; 
+    top: 200px;
+    right: 5%;
+    width: 100%; 
+    font-size: 50px;
+    font-family: cursive;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      color: #fff;
+      text-shadow: 0 0 10px #183736, 0 0 20px #094340, 0 0 30px #74d0cb, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #1ef2e7, 0 0 30px #3ae1d9, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+}
 .parrafoPrincipal{
-    width: 30%;
-    height: 50%;
-    margin: 0 auto;
-    color: yellow;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     position: absolute;
-    right: 32%;
-    font-family:  cursive;
+    top: 40%;
+    left: 38%; 
+    font-family: monospace;
+    border-left: 3px solid white;
+    white-space: nowrap;
+    font-size: 20px;
+    overflow: hidden;
+    display: inline-block;
+    width: 0; /* Se inicia sin ancho */
+    position: absolute;
+    animation: typing 4s steps(35) 1s forwards, erasing 4s steps(35) alternate-reverse, parpadeo 1s infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes erasing {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+@keyframes parpadeo {
+    0% {
+        border-left-color: transparent;
+    }
+    50% {
+        border-left-color: white; /* Color del borde que parpadea */
+    }
+    100% {
+        border-left-color: transparent;
+    }
+}
+
+.parpadeo {
+    border-left: 3px solid transparent; /* Borde izquierdo inicial */
+    animation: parpadeo 1s infinite; /* Animación de parpadeo */
+}
+.imagen-de-allan{
+    position: absolute; /* Cambio a posición fija */
+    top: 30%; /* Ajusta la posición desde la parte superior */
+    right: 63%; /* Ajusta la posición desde la derecha */
+    width: 220px;
+    height: 220px;
+    border-radius: 999px;
 }
 .iconGitHub{
     display: flex;
     justify-content: center;
     width: 40px;
     position: absolute;
-    top: 60%;
-    left: 48%;
+    top: 50%;
+    left: 44%;
 }
 .titleMisProyectos{
     position: absolute;
-    top: 62%;
+    top: 60%;
     right: 39%;
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .imagen-tic-tac-toe{
     width: 250px;
@@ -136,10 +258,25 @@ nav ul li a{
     margin-right: auto;
     width: 250px;
     position: absolute;
-    top: 80%;
-    right: 72%;
+    top: 100%;
+    right: 69%;
     gap: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.3s ease;
     
+}
+.proyectos-container {
+    border: 3px solid rgba(0, 0, 0, 0.4) ; /* Cambia el color y grosor del borde */
+    padding: 170px; /* Ajusta el espacio interno entre el contenido y el borde */
+    margin-top: 100px; /* Ajusta el espacio superior */
+    width: 60%; /* Ajusta el ancho del contenedor si es necesario */
+    padding-right: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: #fff;
+
 }
 .GaleriaProyectos a:hover{
     position: relative;
@@ -147,6 +284,8 @@ nav ul li a{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón por encima */
+    border-color: #000;
 }
 a{
     text-decoration: none;
@@ -220,4 +359,22 @@ a{
     .modal {
         width: 90%;  /* Asegura que el modal se vea bien en pantallas pequeñas */
     }
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 20%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+        transform: translateX(0);
+    }
+}
+img{
+    animation: show linear;
+    animation-timeline: view();
+    animation-range: entry 20% contain 10%;
+    animation-fill-mode: both; /*La animacion no se regresa a su estado original*/
 }
