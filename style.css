@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
 
 body{
-    background: linear-gradient(to right, rgb(11, 11, 87), rgba(7, 71, 117, 0.334));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.596));
     margin: 20px;
 }
 .container{
@@ -184,7 +184,7 @@ nav ul li a {
         width: 0;
     }
     to {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -279,13 +279,10 @@ nav ul li a {
 
 }
 .GaleriaProyectos a:hover{
-    position: relative;
-    top: -20px;
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: -20%;
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
     transition: all 0.3s ease-in-out;
-    transform: scale(1.05); /* Efecto de zoom al pasar el ratón por encima */
-    border-color: #000;
 }
 a{
     text-decoration: none;
@@ -377,4 +374,46 @@ img{
     animation-timeline: view();
     animation-range: entry 20% contain 10%;
     animation-fill-mode: both; /*La animacion no se regresa a su estado original*/
+}
+.cursos-container{
+    border: 3px solid rgba(0, 0, 0, 0.4) ; /* Cambia el color y grosor del borde */
+    padding: 170px; /* Ajusta el espacio interno entre el contenido y el borde */
+    margin-top: 30px; /* Ajusta el espacio superior */
+    width: 60%; /* Ajusta el ancho del contenedor si es necesario */
+    padding-right: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: #fff;
+}
+.cursos {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    position: absolute;
+    top: 170%;
+    right: 70%;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cursos a:hover {
+    margin-top: -20%;
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+    transition: all 0.3s ease-in-out;
+}
+.title-cursos{
+    text-align: center;
+    margin-top: 120px;
+}
+.imagen-cursos{
+    width: 250px;
+    height: 230px;
+    padding: 10px; 
+    border-radius: 8px;
+    background: rgb(0, 0, 0);
 }
