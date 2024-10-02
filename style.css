@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
 
 body{
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.596));
-    margin: 20px;
+    background: linear-gradient(to right, rgba(21, 71, 198, 0.706), rgb(11, 62, 84));
+    margin: 0%;
 }
 .container{
     margin: 0 auto;
@@ -40,10 +40,11 @@ nav {
     background-color: rgba(0, 157, 255, 0.1);
     text-align: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.484);
-    position: fixed; /* Cambiado a fixed para que sea fijo */
+    position: fixed; 
     right: 27%;
-    top: 0; /* Asegura que el menú esté pegado en la parte superior */
-    z-index: 1000; /* Asegura que el menú quede por encima de otros elementos */
+    top: 0; 
+    z-index: 1000; 
+    background-color: transparent;
 }
 
 nav ul {
@@ -228,6 +229,13 @@ nav ul li a {
     width: 220px;
     height: 220px;
     border-radius: 999px;
+    border: 5px solid white;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.484);
+    transition: all 3s ease;
+
+}
+.imagen-de-allan:hover{
+    filter: blur(5px)
 }
 .iconGitHub{
     display: flex;
@@ -259,7 +267,7 @@ nav ul li a {
     margin-right: auto;
     width: 250px;
     position: absolute;
-    top: 100%;
+    top: 101%;
     right: 69%;
     gap: 20px;
     border-radius: 5px;
@@ -268,7 +276,7 @@ nav ul li a {
     
 }
 .proyectos-container {
-    border: 3px solid rgba(0, 0, 0, 0.4) ; /* Cambia el color y grosor del borde */
+    border: 5px solid rgba(0, 0, 0, 0.4) ; /* Cambia el color y grosor del borde */
     padding: 170px; /* Ajusta el espacio interno entre el contenido y el borde */
     margin-top: 100px; /* Ajusta el espacio superior */
     width: 60%; /* Ajusta el ancho del contenedor si es necesario */
@@ -277,6 +285,7 @@ nav ul li a {
     margin-right: auto;
     border-radius: 10px; /* Bordes redondeados opcionales */
     box-shadow: #fff;
+    box-shadow: 10px 5px 5px rgba(84, 84, 84, 0.706);
 
 }
 .GaleriaProyectos a:hover{
@@ -377,7 +386,7 @@ img{
     animation-fill-mode: both; /*La animacion no se regresa a su estado original*/
 }
 .cursos-container{
-    border: 3px solid rgba(0, 0, 0, 0.4) ; /* Cambia el color y grosor del borde */
+    border: 5px solid rgba(0, 0, 0, 0.4) ; /* Cambia el color y grosor del borde */
     padding: 170px; /* Ajusta el espacio interno entre el contenido y el borde */
     margin-top: 30px; /* Ajusta el espacio superior */
     width: 60%; /* Ajusta el ancho del contenedor si es necesario */
@@ -385,7 +394,8 @@ img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px; /* Bordes redondeados opcionales */
-    box-shadow: #fff;
+    box-shadow: 10px 5px 5px rgba(84, 84, 84, 0.706);
+    margin-bottom: 10%;
 }
 .cursos {
     display: inline-flex;
@@ -393,7 +403,7 @@ img{
     margin-right: auto;
     width: 250px;
     position: absolute;
-    top: 170%;
+    top: 172%;
     right: 70%;
     gap: 20px;
     border-radius: 5px;
@@ -411,6 +421,12 @@ img{
     text-align: center;
     margin-top: 120px;
     color: yellow;
+}
+.title-cursos-img{
+    text-align: center;
+}
+.title-proyectos-img{
+    text-align: center;
 }
 .imagen-cursos{
     width: 250px;
