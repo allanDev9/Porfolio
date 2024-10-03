@@ -12,28 +12,6 @@ body{
     overflow: hidden;
     overflow-x: hidden;
 }
-@keyframes titlePrincipal{
-    0%{
-        width: 0;
-        height: 0;
-    }
-    30%{
-        width: 20vw;
-        height: 0;
-    }
-    60%{
-        width: 30vw;
-        height: 6vw;
-    }
-    80%{
-        width: 30vw;
-        height: 6vw;
-    }
-    100%{
-        width: 25vw;
-        height: 6vw;
-    }
-}
 nav {
     height: 50px;
     width: 50%;
@@ -122,7 +100,7 @@ nav ul li a {
     top: 6%;
     right: -31%;
     text-align: center;
-    color: rgba(17, 12, 159, 0.88);
+    color: rgba(255, 255, 255, 0.88);
     font-family: cursive;
     font-size: 60px;
     border-bottom: 0.2vw solid white; 
@@ -131,6 +109,28 @@ nav ul li a {
     margin: 20px;
     margin-bottom: 20px; 
     animation: titlePrincipal 2.5s linear forwards infinite alternate-reverse;
+}
+@keyframes titlePrincipal{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    30%{
+        width: 20vw;
+        height: 0;
+    }
+    60%{
+        width: 30vw;
+        height: 6vw;
+    }
+    80%{
+        width: 30vw;
+        height: 6vw;
+    }
+    100%{
+        width: 25vw;
+        height: 6vw;
+    }
 }
 .titleMisProyectos{
     display: flex;
@@ -311,48 +311,130 @@ a{
         position: relative;
         left: -75%;
     }
-    .subTitle, .parrafoPrincipal{
+    .titlePrincipal {
+        position: absolute;
+        top: 10%;
+        right: 40%;
         text-align: center;
-        position: relative;
-        left: -10px;
-    }
-    nav{
+        color: rgba(255, 255, 255, 0.88);
+        font-family: cursive;
+        font-size: 60px;
+        border-bottom: 0.2vw solid white;
         height: 100px;
-        width: 50%;
+        overflow: hidden;
+        margin: 20px;
+        margin-bottom: 20px;
+        animation: animacion-titulo 4s ease-in-out forwards infinite alternate-reverse;
+    }
+    
+    @keyframes animacion-titulo {
+        0% {
+            width: 0;
+            height: 0;
+        }
+        50% {
+            width: 45vw;
+            height: 15vw;
+        }
+        75% {
+            width: 55vw;
+            height: 20vw;
+        }
+        100% {
+            width: 65vw;
+            height: 25vw;
+        }
+    } 
+    .subTitle{
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 10px;
+    }
+    .imagen-de-allan{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 42%;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: -4px;
+        height: auto;
+        width: 100%; 
         margin: 0 auto;
-        background-color:#17181C;
+        background-color: #17181C;
         text-align: center;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        font-size: 6%;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-around;
+        padding: 0;
     }
 
     nav ul li {
-        margin: 10px 0;
-    }
-    nav ul li a{
-        position: relative;
-        top: -16px;
-        right: -20px;
+        list-style: none;
+        margin: 0; 
     }
 
+    nav ul li a {
+        display: block;
+        font-size: 14px; 
+        padding: 10px 20px;
+        color: white; 
+        text-decoration: none; 
+    }
+    .titleMisProyectos{
+        position: absolute;
+        top: 60%;
+        left: 38%;
+    }
+    .proyectos-container{
+        width: 5%;
+        height: 1060px;
+    }
     .GaleriaProyectos {
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        left: 15%;
+        top: 110%;
     }
 
     .GaleriaProyectos a {
         width: 90%;  /* Adaptar las tarjetas al tamaño de pantalla en móvil */
     }
-
+    .cursos-container{
+        width: 100vw; /* Usa todo el ancho del viewport */
+        height: 1330px;
+        position: absolute; /* Mantén relative para mejor control */
+        top: 320%; /* Ajuste de la posición vertical */
+        left: 5%; /* Ajuste de alineación */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+        padding: 20px; /* Reduce el padding para evitar expansión innecesaria */
+    }
+    .cursos{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 12%;
+        margin-top: -740%;
+        margin-bottom: 20%;
+    }
+    .title-cursos{
+        position: absolute;
+        top: 300%;
+        right: 40%;
+    }
     .modal {
         width: 80%;
         padding: 20px;
     }
 }
+
 
 @media (max-width: 480px) {
     h1.title, h2.subTitle, h2.titleMisProyectos {
