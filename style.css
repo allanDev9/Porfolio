@@ -364,10 +364,9 @@ a{
         margin-right: 0;
         position: fixed;
         top: 0;
-        left: -4px;
         height: 6%;
         width: 100%; 
-        margin: 0 auto;
+        margin: 0;
         background-color: #17181C;
         text-align: center;
     }
