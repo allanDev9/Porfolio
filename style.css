@@ -447,7 +447,9 @@ a{
     }
     nav{
         position: static;
-        margin-left: -5%;
+        width: 54%;
+        margin-left: 10%;
+
     }
     
     h1.title, h2.subTitle, h2.titleMisProyectos {
