@@ -446,10 +446,18 @@ a{
         margin: 0;
     }
     nav{
-        position: static;
-        width: 54%;
-        margin-left: 10%;
-
+        position: fixed;
+        width: 85%;
+        height: 5%;
+        left: 7%;
+    }
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+        margin-top: 0; 
+        padding: 0;
+        justify-content: center;
+        gap: 4%; 
     }
     
     h1.title, h2.subTitle, h2.titleMisProyectos {
