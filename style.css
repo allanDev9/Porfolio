@@ -443,6 +443,16 @@ a{
 }
 
 @media (max-width: 480px) {
+    body{
+        margin: 0;
+    }
+    nav{
+        position: fixed;
+        left: -2%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
     h1.title, h2.subTitle, h2.titleMisProyectos {
         font-size: 1.5em; /* Reducir el tamaño de los títulos en pantallas muy pequeñas */
     }
