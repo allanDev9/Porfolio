@@ -446,6 +446,7 @@ a{
     }
     .container{
        min-width: 250%;
+       max-width: 250%;
     }
     nav{
         position: static;
