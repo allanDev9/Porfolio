@@ -363,10 +363,9 @@ a{
         top: 42%;
     }
     nav {
-        margin-right: 0;
-        position: fixed;
+        position: static;
         top: 0;
-        height: 6%;
+        height: 3%;
         width: 100%; 
         margin: 0;
         background-color: #17181C;
@@ -447,10 +446,8 @@ a{
         margin: 0;
     }
     nav{
-        position: fixed;
-        left: -2%;
-        padding-left: 0%;
-        padding-right: 0%;
+        position: static;
+        margin-left: -5%;
     }
     
     h1.title, h2.subTitle, h2.titleMisProyectos {
