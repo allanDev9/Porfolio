@@ -446,10 +446,11 @@ a{
         margin: 0;
     }
     nav{
-        position: fixed;
-        width: 85%;
+        position: static;
+        width: 30%;
         height: 5%;
-        left: 7%;
+        margin-top: 0%;
+        margin-left: 32%;
     }
     nav ul {
         display: flex; 
