@@ -444,6 +444,9 @@ a{
     body{
         margin: 0;
     }
+    .container{
+       min-width: 250%;
+    }
     nav{
         position: static;
         width: 30%;
