@@ -305,6 +305,9 @@ a{
 }
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) and (max-width: 1024px){
+    body{
+        margin: 0;
+    }
     .container {
         width: 250%;
         padding: 20px;
@@ -358,10 +361,11 @@ a{
         top: 42%;
     }
     nav {
+        margin-right: 0;
         position: fixed;
         top: 0;
         left: -4px;
-        height: 9%;
+        height: 6%;
         width: 100%; 
         margin: 0 auto;
         background-color: #17181C;
