@@ -416,7 +416,7 @@ a{
     }
     .cursos-container{
         width: 100vw; /* Usa todo el ancho del viewport */
-        height: 1330px;
+        height: 1350px;
         position: absolute; /* Mantén relative para mejor control */
         top: 320%; /* Ajuste de la posición vertical */
         left: 5%; /* Ajuste de alineación */
@@ -428,7 +428,7 @@ a{
         align-items: center;
         position: absolute;
         left: 12%;
-        margin-top: -740%;
+        margin-top: -750%;
     }
     .title-cursos{
         position: absolute;
@@ -460,9 +460,30 @@ a{
         justify-content: center;
         gap: 4%; 
     }
+    .titlePrincipal{
+        font-size: 2.5rem;
+    }
+    @keyframes animacion-titulo {
+        0% {
+            width: 0;
+            height: 0;
+        }
+        50% {
+            width: 45vw;
+            height: 5vw;
+        }
+        75% {
+            width: 55vw;
+            height: 10vw;
+        }
+        100% {
+            width: 65vw;
+            height: 15vw;
+        }
+    } 
     
     h1.title, h2.subTitle, h2.titleMisProyectos {
-        font-size: 1.5em; /* Reducir el tamaño de los títulos en pantallas muy pequeñas */
+        font-size: 1.5em; }
     }
 
     .GaleriaProyectos a {
@@ -477,7 +498,7 @@ a{
         text-align: center;
         padding: 20px;
     }
-}
+
 
 @keyframes show{
     from{
@@ -507,7 +528,7 @@ img{
     margin-right: auto;
     border-radius: 10px; /* Bordes redondeados opcionales */
     box-shadow: 10px 5px 5px rgba(84, 84, 84, 0.706);
-    margin-bottom: 10%;
+    margin-bottom: 30%;
 }
 .cursos {
     display: inline-flex;
