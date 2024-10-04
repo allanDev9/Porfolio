@@ -438,61 +438,6 @@ a{
         padding: 20px;
     }
 }
-/* Estilos para pantallas grandes (más de 1024px) */
-@media (min-width: 1024px) {
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 30px;
-        position: relative;
-        left: 0;
-    }
-    .titlePrincipal {
-        font-size: 70px;
-        top: 12%;
-        right: 30%;
-        animation: animacion-titulo 2s ease-in-out forwards infinite alternate-reverse;
-    }
-    .subTitle {
-        top: 38%;
-        left: 0;
-    }
-    .imagen-de-allan {
-        width: 160px;
-        height: 160px;
-        top: 40%;
-    }
-    nav {
-        height: 12%;
-    }
-    nav ul li a {
-        font-size: 18px;
-        padding: 10px;
-    }
-    .titleMisProyectos {
-        top: 50%;
-        left: 35%;
-    }
-    .proyectos-container {
-        height: 1400px;
-    }
-    .GaleriaProyectos {
-        top: 115%;
-        left: 8%;
-    }
-    .cursos-container {
-        top: 340%;
-        left: 5%;
-        height: 1600px;
-    }
-    .title-cursos {
-        top: 315%;
-        right: 30%;
-    }
-    .modal {
-        width: 75%;
-    }
-}
 
 @media (max-width: 480px) {
     h1.title, h2.subTitle, h2.titleMisProyectos {
@@ -520,50 +465,6 @@ a{
     }
 }
 
-/* Estilos para pantallas extra grandes (más de 1440px) */
-@media (min-width: 1440px) {
-    .container {
-        width: 70%;
-        padding: 40px;
-    }
-    .titlePrincipal {
-        font-size: 80px;
-        top: 10%;
-        right: 25%;
-    }
-    .subTitle {
-        top: 35%;
-    }
-    .imagen-de-allan {
-        width: 180px;
-        height: 180px;
-        top: 38%;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    .titleMisProyectos {
-        top: 48%;
-        left: 30%;
-    }
-    .proyectos-container {
-        height: 1600px;
-    }
-    .GaleriaProyectos {
-        top: 110%;
-        left: 5%;
-    }
-    .cursos-container {
-        top: 350%;
-        height: 1800px;
-    }
-    .title-cursos {
-        top: 320%;
-    }
-    .modal {
-        width: 70%;
-    }
-}
 img{
     animation: show linear;
     animation-timeline: view();
