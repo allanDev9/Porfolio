@@ -37,8 +37,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    font-weight: bold;
+    color: rgb(208, 255, 0);
+    font-weight: 700;
     text-decoration: none;
     font-size: 20px;
     padding: 18px;
@@ -284,7 +284,6 @@ nav ul li a {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px; /* Bordes redondeados opcionales */
-    box-shadow: #fff;
     box-shadow: 10px 5px 5px rgba(84, 84, 84, 0.706);
 
 }
@@ -368,7 +367,7 @@ a{
         height: 3%;
         width: 100%; 
         margin: 0;
-        background-color: #17181C;
+        background-color: #000000;
         text-align: center;
     }
 
@@ -410,18 +409,18 @@ a{
         left: 15%;
         top: 110%;
     }
-
+    
     .GaleriaProyectos a {
-        width: 90%;  /* Adaptar las tarjetas al tamaño de pantalla en móvil */
+        width: 90%;  
     }
     .cursos-container{
-        width: 100vw; /* Usa todo el ancho del viewport */
+        width: 100vw; 
         height: 1350px;
-        position: absolute; /* Mantén relative para mejor control */
-        top: 320%; /* Ajuste de la posición vertical */
-        left: 5%; /* Ajuste de alineación */
-        box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
-        padding: 20px; /* Reduce el padding para evitar expansión innecesaria */
+        position: absolute; 
+        top: 320%; 
+        left: 5%; 
+        box-sizing: border-box; 
+        padding: 20px; 
     }
     .cursos{
         flex-direction: column;
@@ -449,8 +448,8 @@ a{
         position: static;
         width: 30%;
         height: 4%;
-        margin-top: 0%;
         margin-left: 32%;
+        background-color: transparent;
     }
     nav ul {
         display: flex; 
@@ -460,8 +459,19 @@ a{
         justify-content: center;
         gap: 4%; 
     }
+    nav ul li a{
+        color: #d9ff00;
+
+    }
     .titlePrincipal{
         font-size: 2.5rem;
+    }
+    .title-proyectos-img{
+        text-shadow: 7px 1px 6px rgb(71, 205, 27);
+    }
+    .title-cursos-img{
+        text-shadow: 7px 1px 6px rgb(71, 205, 27);
+        
     }
     @keyframes animacion-titulo {
         0% {
